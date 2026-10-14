@@ -2,15 +2,15 @@
 /* 疑野流県疑野流市 公式サイト（架空・動画教材用）共通スタイル */
 
 :root {
-  --navy: #2d4a22;
-  --navy-dark: #1f3317;
-  --teal: #b5651d;
-  --teal-soft: #f6e9dc;
-  --ink: #23303d;
-  --ink-soft: #5a6875;
-  --bg: #f6f8fb;
+  --navy: #c2287a;
+  --navy-dark: #9a1f60;
+  --teal: #7b4fd6;
+  --teal-soft: #f3e9ff;
+  --ink: #3a2438;
+  --ink-soft: #7a6378;
+  --bg: #fff8fb;
   --card: #ffffff;
-  --line: #dfe5ec;
+  --line: #f6d5e6;
   --amber-bg: #fff6e0;
   --amber-line: #e0a93a;
   --radius: 12px;
@@ -31,7 +31,7 @@ body {
 
 img, svg { max-width: 100%; }
 
-a { color: #2d4a22; }
+a { color: #c2287a; }
 a:hover { color: var(--teal); }
 
 .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
@@ -77,11 +77,11 @@ a:hover { color: var(--teal); }
 
 /* ===== ヒーロー ===== */
 .hero {
-  background: linear-gradient(135deg, #2d4a22 0%, #b5651d 100%);
+  background: linear-gradient(135deg, #c2287a 0%, #7b4fd6 100%);
   color: #fff; padding: 52px 0;
 }
 .hero .catch { font-size: 1.9rem; font-weight: 700; letter-spacing: 0.04em; line-height: 1.5; }
-.hero .lead { margin-top: 14px; font-size: 1rem; max-width: 40em; color: #eaf5f3; }
+.hero .lead { margin-top: 14px; font-size: 1rem; max-width: 40em; color: #fff0f8; }
 .hero .badges { margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap; }
 .hero .badges span {
   background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.4);
@@ -91,7 +91,7 @@ a:hover { color: var(--teal); }
 /* ===== ページ見出し（下層ページ） ===== */
 .page-head { background: var(--navy); color: #fff; padding: 30px 0; }
 .page-head h1 { font-size: 1.55rem; letter-spacing: 0.04em; }
-.page-head p { margin-top: 6px; font-size: 0.9rem; color: #d5e2f0; }
+.page-head p { margin-top: 6px; font-size: 0.9rem; color: #ffe3f2; }
 .breadcrumb { font-size: 0.8rem; color: var(--ink-soft); padding: 10px 0; }
 .breadcrumb a { color: var(--ink-soft); }
 
@@ -109,12 +109,12 @@ p + p { margin-top: 12px; }
 .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 .card {
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 18px 20px; box-shadow: 0 1px 3px rgba(18,58,107,0.05);
+  padding: 18px 20px; box-shadow: 0 1px 3px rgba(194,40,122,0.05);
 }
 .card h3 { margin-bottom: 6px; }
 .card p { font-size: 0.9rem; color: var(--ink-soft); }
 a.card { display: block; text-decoration: none; color: inherit; transition: box-shadow .15s, transform .15s; }
-a.card:hover { box-shadow: 0 4px 14px rgba(18,58,107,0.12); transform: translateY(-2px); }
+a.card:hover { box-shadow: 0 4px 14px rgba(194,40,122,0.12); transform: translateY(-2px); }
 .card .icon { font-size: 1.5rem; line-height: 1; }
 
 /* ===== お知らせ一覧 ===== */
@@ -123,10 +123,10 @@ a.card:hover { box-shadow: 0 4px 14px rgba(18,58,107,0.12); transform: translate
 .news li:first-child { border-top: none; }
 .news time { font-size: 0.84rem; color: var(--ink-soft); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .news .tag {
-  font-size: 0.72rem; background: var(--teal-soft); color: #06695c;
+  font-size: 0.72rem; background: var(--teal-soft); color: #5b34b0;
   border-radius: 4px; padding: 1px 8px; white-space: nowrap; align-self: center;
 }
-.news .tag.info { background: #e7eefa; color: #17457f; }
+.news .tag.info { background: #e7eefa; color: #5b34b0; }
 .news .tag.event { background: #fdeef0; color: #9c2b3d; }
 .news .title { font-size: 0.94rem; flex: 1 1 16em; }
 
@@ -143,7 +143,7 @@ a.card:hover { box-shadow: 0 4px 14px rgba(18,58,107,0.12); transform: translate
 .table-scroll { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; background: var(--card); font-size: 0.92rem; }
 th, td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; vertical-align: top; }
-th { background: #eef2f7; color: var(--navy); white-space: nowrap; }
+th { background: #fdeaf4; color: var(--navy); white-space: nowrap; }
 
 /* ===== 注意書きボックス ===== */
 .notice {
@@ -160,9 +160,9 @@ ul.dots, ol.nums { padding-left: 1.4em; font-size: 0.94rem; }
 ul.dots li, ol.nums li { margin-bottom: 4px; }
 
 /* ===== フッター ===== */
-.site-footer { margin-top: 52px; background: var(--navy-dark); color: #cfdcea; font-size: 0.86rem; padding: 34px 0 26px; }
+.site-footer { margin-top: 52px; background: var(--navy-dark); color: #ffe3f2; font-size: 0.86rem; padding: 34px 0 26px; }
 .site-footer h2 { color: #fff; border-left-color: var(--teal); font-size: 1rem; margin-bottom: 10px; }
-.site-footer a { color: #a8d8d0; }
+.site-footer a { color: #ffe08a; }
 .site-footer .cols { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 .site-footer .fine { margin-top: 22px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.18); font-size: 0.8rem; color: #a7b8cb; }
 
@@ -173,3 +173,11 @@ ul.dots li, ol.nums li { margin-bottom: 4px; }
   .header-tag { display: none; }
   .gnav a { font-size: 0.86rem; padding: 10px 13px; }
 }
+
+/* ギャル市：見出しだけポップな書体に */
+h1, h2, .hero .catch, .site-title .name, .stat .num { font-family: "Mochiy Pop One", "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif; font-weight: 400; }
+body { font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif; }
+ul.dots { padding-left: 1.3em; }
+ul.dots li { margin-bottom: 8px; }
+.pink { color: #e2337f; font-weight: 700; }
+.mark { background: linear-gradient(transparent 55%, #ffe08a 55%); }
