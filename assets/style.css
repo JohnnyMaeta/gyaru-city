@@ -117,6 +117,11 @@ a.card { display: block; text-decoration: none; color: inherit; transition: box-
 a.card:hover { box-shadow: 0 4px 14px rgba(194,40,122,0.12); transform: translateY(-2px); }
 .card .icon { font-size: 1.5rem; line-height: 1; }
 
+/* ===== 写真 ===== */
+.photo { margin: 0 0 18px; }
+.photo img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); }
+.photo figcaption { margin-top: 6px; font-size: 0.82rem; color: var(--ink-soft); }
+
 /* ===== お知らせ一覧 ===== */
 .news { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .news li { list-style: none; display: flex; gap: 14px; padding: 13px 20px; border-top: 1px solid var(--line); flex-wrap: wrap; }
