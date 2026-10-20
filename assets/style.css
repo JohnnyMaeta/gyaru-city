@@ -121,6 +121,8 @@ a.card:hover { box-shadow: 0 4px 14px rgba(194,40,122,0.12); transform: translat
 .photo { margin: 0 0 18px; }
 .photo img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); }
 .photo figcaption { margin-top: 6px; font-size: 0.82rem; color: var(--ink-soft); }
+.photos { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.photos .photo { margin-bottom: 0; }
 
 /* ===== お知らせ一覧 ===== */
 .news { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
